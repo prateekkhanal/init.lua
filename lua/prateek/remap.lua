@@ -1,5 +1,6 @@
 -- Terminal Mappings
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
 -- Floaterm Mappings
 vim.keymap.set("t", "<A-t>", "<C-\\><C-n><cmd>FloatermToggle<cr>")
 vim.keymap.set("v", "<A-c>", "\"+y")
@@ -15,3 +16,16 @@ vim.keymap.set("n", "<leader>fth", "<cmd>FloatermFirst<cr>")
 vim.keymap.set("n", "<leader>ftl", "<cmd>FloatermLast<cr>")
 vim.keymap.set("t", "<A-l>", "<cmd>FloatermNext<cr>")
 vim.keymap.set("t", "<A-h>", "<cmd>FloatermPrev<cr>")
+
+-- Harpoon Mappings
+vim.keymap.set("n", "<A-a>", "<cmd>lua require('harpoon.mark').add_file()<cr>")
+vim.keymap.set("n", "<A-m>", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>")
+vim.keymap.set("n", "<A-1>", "<cmd>lua require('harpoon.ui').nav_file(1)<cr>")
+vim.keymap.set("n", "<A-2>", "<cmd>lua require('harpoon.ui').nav_file(2)<cr>")
+vim.keymap.set("n", "<A-3>", "<cmd>lua require('harpoon.ui').nav_file(3)<cr>")
+vim.keymap.set("n", "<A-4>", "<cmd>lua require('harpoon.ui').nav_file(4)<cr>")
+vim.keymap.set("n", "<A-5>", "<cmd>lua require('harpoon.ui').nav_file(5)<cr>")
+vim.keymap.set("n", "<A-6>", "<cmd>lua require('harpoon.ui').nav_file(6)<cr>")
+vim.keymap.set("n", "<A-7>", "<cmd>lua require('harpoon.ui').nav_file(7)<cr>")
+vim.keymap.set("n", "<A-n>", "<cmd>lua require('harpoon.ui').nav_next()<cr>")
+vim.keymap.set("n", "<A-p>", "<cmd>lua require('harpoon.ui').nav_prev()<cr>")
