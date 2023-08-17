@@ -28,12 +28,14 @@ vim.opt.swapfile = false -- don't create swapfiles (temporary files in vim)
 
 -- remember the history of changes in a file even after vim is closed
 vim.opt.undofile = true 
-vim.opt.undodir = "undodir/tmp"
+vim.opt.undodir = vim.fn.getenv('MYVIMRC') .. "/../undodir/tmp"
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
+
+vim.opt.path:append("**")   -- search for files recursively
 
 vim.opt.listchars:append "space:."
 vim.opt.listchars:append "eol:↵"
