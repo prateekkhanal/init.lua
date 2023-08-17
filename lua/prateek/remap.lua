@@ -1,0 +1,17 @@
+-- Terminal Mappings
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+-- Floaterm Mappings
+vim.keymap.set("t", "<A-t>", "<C-\\><C-n><cmd>FloatermToggle<cr>")
+vim.keymap.set("v", "<A-c>", "\"+y")
+vim.keymap.set("n", "<A-c>", "\"+yy")
+vim.keymap.set("n", "<leader><C-a>", "ggVG")
+vim.keymap.set("n", "<leader><C-c>", "ggVG\"+y")
+vim.keymap.set("n", "<leader>ftw", "<cmd>FloatermNew<cr>")
+vim.keymap.set("n", "<A-t>", "<cmd>FloatermToggle<cr>")
+vim.keymap.set("n", "<leader>ftx", "<cmd>FloatermNext<cr>")
+vim.keymap.set("n", "<leader>ftp", "<cmd>FloatermPrev<cr>")
+vim.keymap.set("n", "<leader>ftk", "<cmd>FloatermKill<cr>")
+vim.keymap.set("n", "<leader>fth", "<cmd>FloatermFirst<cr>")
+vim.keymap.set("n", "<leader>ftl", "<cmd>FloatermLast<cr>")
+vim.keymap.set("t", "<A-l>", "<cmd>FloatermNext<cr>")
+vim.keymap.set("t", "<A-h>", "<cmd>FloatermPrev<cr>")
