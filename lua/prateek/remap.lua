@@ -41,3 +41,18 @@ vim.keymap.set("n", "<A-b>", "<cmd>Telescope current_buffer_fuzzy_find<cr>")
 vim.keymap.set("n", "<leader>tfb", "<cmd>Telescope file_browser<cr>")
 vim.keymap.set("n", "<leader>tgs", "<cmd>Telescope grep_string<cr>")
 vim.keymap.set("n", "<A-e>", "<cmd>Telescope file_browser<cr>")
+
+-- Buffer management
+vim.keymap.set("n", "<leader>onb", "<cmd>enew<cr>")
+vim.keymap.set("n", "<A-x>", "<cmd>bd!<cr>")
+
+-- open neovim config files
+vim.keymap.set("n", "<leader>ocf", "<cmd>find $MYVIMRC<cr>")        -- open config file
+vim.keymap.set("n", "<leader>omf", "<cmd>find $MYVIMRC/../lua/prateek/remap.lua<cr>")       -- open mappings file
+vim.keymap.set("n", "<leader>opf", "<cmd>find $MYVIMRC/../lua/prateek/plugins.lua<cr>")        -- open plugins file
+
+-- Paste the text without losing it in visual mode
+vim.keymap.set("v", "<Space>p", "\"_dP")
+
+-- Tmux sessionizer (For tmux users who have configured tmux to work with vim)
+-- vim.keymap.set("n", "<C-f>", "<cmd>!tmux new tmux_sessionizer<cr>")
