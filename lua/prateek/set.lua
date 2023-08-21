@@ -37,7 +37,6 @@ vim.opt.termguicolors = true
 
 vim.opt.path:append("**")   -- search for files recursively
 
-vim.opt.listchars:append "space:."
 vim.opt.listchars:append "eol:↵"
 
 -- set the default shell using command below

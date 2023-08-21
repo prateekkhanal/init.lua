@@ -79,4 +79,7 @@ return require('packer').startup(function(use)
   use { "kdheepak/lazygit.nvim", requires = { "nvim-lua/plenary.nvim" } }
   use 'lewis6991/gitsigns.nvim'
 
+  -- Indentation lines
+  use "lukas-reineke/indent-blankline.nvim"
+
 end)
